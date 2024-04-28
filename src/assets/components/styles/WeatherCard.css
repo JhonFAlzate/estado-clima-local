@@ -1,0 +1,127 @@
+.card {
+    width: 100%;
+    max-width: 22em;
+    background-color: rgba(198, 166, 149, 0.667);
+    padding: 1em;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+
+    .card__title {
+        display: flex;
+        text-align: center;
+        font-weight: 500;
+        font-size: 3em;
+        margin-bottom: 0.2em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card__country {
+        font-size: 1.5em;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1em;
+
+    }
+
+    .card__body {
+
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .card__image-container {}
+
+        .info {
+
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            gap: 1em;
+
+            .info__title {
+
+                font-size: 0.8em;
+                text-align: center;
+                font-weight: 700;
+                text-transform: capitalize;
+
+                &::after,
+                &::before {
+                    content: '"';
+                }
+            }
+
+            .info__list {
+               
+                .info__item {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0.8em;
+                   
+                }
+
+                .info__label {
+                    color: #2b2b2d;
+                }
+
+                .info__value {
+                    font-weight: 900;
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+    .card__temp {
+        text-align: center;
+        margin-bottom: em;
+        font-weight: 900;
+        font-size: 4em;
+
+    }
+
+    .card__btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+        background-color: rgb(207, 63, 11);
+        color: white;
+        padding: 0.6em 2 em;
+        border-radius: 0.3em;
+        width: 40%;
+        height: 2em;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 13px 10px #ee991a;
+            background-color: rgb(206, 206, 76);
+            color: black;
+            /* filter:brightness(1.2); */
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .card {
+        font-size: 1.5rem;
+    }
+}
