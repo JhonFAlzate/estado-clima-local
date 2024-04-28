@@ -66,16 +66,16 @@ useEffect(() => {
       {
         isLoading
         ? (
-          <div>
-            <h1>Loading....</h1>
+          <div className='loading'>
+            <h2 className='loading__message'>Loading....</h2>
             {
-              showMessage && <p>Por favor activa la ubicación para poder ver el clima.</p>
+              showMessage && <p>Por favor activa la ubicación para poder ver el clima local.</p>
             }
           </div>
         )
         : (
           hasError
-          ? <h1>Por favor permite la ubicación</h1>
+          ? <h2 className='loading__message'>Por favor permite la ubicación para poder ver el clima local.</h2>
           : (
           
           <WeatherCard 
