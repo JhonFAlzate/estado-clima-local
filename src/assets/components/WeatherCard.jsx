@@ -34,5 +34,4 @@ const WeatherCard = ({weather, temp}) => {
     </article>
   )
 }
-
 export default WeatherCard
