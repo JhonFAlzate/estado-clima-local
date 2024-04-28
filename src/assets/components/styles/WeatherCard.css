@@ -10,21 +10,21 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    gap: 1em;
-    
+
+
 
     .card__title {
         display: flex;
         text-align: center;
         font-weight: 500;
-        font-size: 3em;
+        font-size: 1.3em;
         margin-bottom: 0.2em;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .card__country {
-        font-size: 1.5em;
+        font-size: 0.7em;
         font-weight: 600;
         text-align: center;
         margin-bottom: 1em;
@@ -63,12 +63,12 @@
             }
 
             .info__list {
-               
+
                 .info__item {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 0.8em;
-                   
+
                 }
 
                 .info__label {
@@ -89,9 +89,9 @@
 
     .card__temp {
         text-align: center;
-        margin-bottom: em;
+        margin-bottom: 0.1em;
         font-weight: 900;
-        font-size: 4em;
+        font-size: 3em;
 
     }
 
@@ -99,12 +99,12 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1em;
+        font-size: 0.7em;
         background-color: rgb(207, 63, 11);
         color: white;
-        padding: 0.6em 2 em;
+        padding: 0.4em 2 em;
         border-radius: 0.3em;
-        width: 40%;
+        width: 60%;
         height: 2em;
         transition: all 0.3s ease-in-out;
 
